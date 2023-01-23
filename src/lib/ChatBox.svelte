@@ -21,7 +21,7 @@
     <Chat username={"Anonymous Voice"}>
         <div slot="chat">
             <p class="font-['ggsans-bold'] text-discord-text-2">Q: What can this bot do?</p>
-            <p class="font-['ggsans'] text-discord-text-2">randomly connect you with other discord user by using a voice channel.</p>
+            <p class="font-['ggsans'] text-discord-text-2">randomly connect you with other discord user across discord servers by using a voice channel.</p>
         </div>
     </Chat>
     <Chat username={"Anonymous Voice"} continueChat={true}>
