@@ -11,7 +11,7 @@
     </div>
     <div class="flex m-0 hover:bg-discord-bg-4 items-center">
         <div class="flex mx-5 my-0">
-            <div class="w-[40px]">
+            <div class="w-[40px] min-w-[40px]">
                 <img src="img/logo.png" alt="logo" class="rounded-full min-w-[40px]" />
             </div>
             <div class="ml-3 text-discord-text-1">
@@ -22,7 +22,7 @@
     </div>
     <div class="flex m-0 hover:bg-discord-bg-4 mt-3 items-center">
         <div class="flex mx-5 py-1 my-0">
-            <div class="w-[40px]">
+            <div class="w-[40px] min-w-[40px]">
                 <img src="img/logo.png" alt="logo" class="rounded-full min-w-[40px]" />
             </div>
             <div class="ml-3 text-discord-text-1">
@@ -34,7 +34,7 @@
     </div>
     <div class="flex m-0 hover:bg-discord-bg-4 items-center">
         <div class="flex mx-5  my-0">
-            <div class="w-[40px]">
+            <div class="w-[40px] min-w-[40px]">
             </div>
             <div class="ml-3 text-discord-text-1">
                 <p class="font-['ggsans-bold'] text-discord-text-2">Q: Why should i invite this bot?</p>
@@ -44,7 +44,7 @@
     </div>
     <div class="flex m-0 hover:bg-discord-bg-4 items-center">
         <div class="flex mx-5  my-0">
-            <div class="w-[40px]">
+            <div class="w-[40px] min-w-[40px]">
             </div>
             <div class="ml-3 text-discord-text-1">
                 <p class="font-['ggsans-bold'] text-discord-text-2">Q: How to use the bot?</p>
@@ -54,7 +54,7 @@
     </div>
     <div class="flex m-0 hover:bg-discord-bg-4 mt-3 items-center">
         <div class="flex mx-5 py-1 my-0">
-            <div class="w-[40px]">
+            <div class="w-[40px] min-w-[40px]">
                 <img src="img/logo.png" alt="logo" class="rounded-full min-w-[40px]" />
             </div>
             <div class="ml-3 text-discord-text-1">
