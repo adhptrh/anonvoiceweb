@@ -1,4 +1,4 @@
-<div class="flex p-5 bg-discord-bg-3">
+<div class="flex p-5 bg-discord-bg-3 rounded-b-lg">
     <input
         placeholder="Message @Anonymous Voice (this website is still read-only)"
         class="p-3 px-4 w-full font-['ggsans'] text-white outline-none rounded-md bg-discord-bg-2"
