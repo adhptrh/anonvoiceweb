@@ -1,3 +1,7 @@
+<script lang="ts">
+    import Chat from "./Chat.svelte"
+</script>
+
 <div class="flex flex-col h-full overflow-y-scroll bg-discord-bg-3">
     <div class="mt-auto" />
     <div class="m-5">
@@ -9,58 +13,32 @@
             >.
         </p>
     </div>
-    <div class="flex m-0 hover:bg-discord-bg-4 items-center">
-        <div class="flex mx-5 my-0">
-            <div class="w-[40px] min-w-[40px]">
-                <img src="img/logo.png" alt="logo" class="rounded-full min-w-[40px]" />
-            </div>
-            <div class="ml-3 text-discord-text-1">
-                <p class="font-['ggsans-bold']">Anonymous Voice</p>
-                <p class="font-['ggsans'] text-discord-text-2">sup, welcome to Anonymous Voice Bot Website!</p>
-            </div>
+    <Chat username={"Anonymous Voice"}>
+        <div slot="chat">
+            <p class="font-['ggsans'] text-discord-text-2">sup, welcome to Anonymous Voice Bot Website!</p>
         </div>
-    </div>
-    <div class="flex m-0 hover:bg-discord-bg-4 mt-3 items-center">
-        <div class="flex mx-5 py-1 my-0">
-            <div class="w-[40px] min-w-[40px]">
-                <img src="img/logo.png" alt="logo" class="rounded-full min-w-[40px]" />
-            </div>
-            <div class="ml-3 text-discord-text-1">
-                <p class="font-['ggsans-bold']">Anonymous Voice</p>
-                <p class="font-['ggsans-bold'] text-discord-text-2">Q: What can this bot do?</p>
-                <p class="font-['ggsans'] text-discord-text-2">randomly connect you with other discord user by using a voice channel.</p>
-            </div>
+    </Chat>
+    <Chat username={"Anonymous Voice"}>
+        <div slot="chat">
+            <p class="font-['ggsans-bold'] text-discord-text-2">Q: What can this bot do?</p>
+            <p class="font-['ggsans'] text-discord-text-2">randomly connect you with other discord user by using a voice channel.</p>
         </div>
-    </div>
-    <div class="flex m-0 hover:bg-discord-bg-4 items-center">
-        <div class="flex mx-5  my-0">
-            <div class="w-[40px] min-w-[40px]">
-            </div>
-            <div class="ml-3 text-discord-text-1">
-                <p class="font-['ggsans-bold'] text-discord-text-2">Q: Why should i invite this bot?</p>
-                <p class="font-['ggsans'] text-discord-text-2">why not?</p>
-            </div>
+    </Chat>
+    <Chat username={"Anonymous Voice"} continueChat={true}>
+        <div slot="chat">
+            <p class="font-['ggsans-bold'] text-discord-text-2">Q: Why should i invite this bot?</p>
+            <p class="font-['ggsans'] text-discord-text-2">why not?</p>
         </div>
-    </div>
-    <div class="flex m-0 hover:bg-discord-bg-4 items-center">
-        <div class="flex mx-5  my-0">
-            <div class="w-[40px] min-w-[40px]">
-            </div>
-            <div class="ml-3 text-discord-text-1">
-                <p class="font-['ggsans-bold'] text-discord-text-2">Q: How to use the bot?</p>
-                <p class="font-['ggsans'] text-discord-text-2">simply join a voice channel and then use /join.</p>
-            </div>
+    </Chat>
+    <Chat username={"Anonymous Voice"} continueChat={true}>
+        <div slot="chat">
+            <p class="font-['ggsans-bold'] text-discord-text-2">Q: How to use the bot?</p>
+            <p class="font-['ggsans'] text-discord-text-2">simply join a voice channel and then use /join.</p>
         </div>
-    </div>
-    <div class="flex m-0 hover:bg-discord-bg-4 mt-3 items-center">
-        <div class="flex mx-5 py-1 my-0">
-            <div class="w-[40px] min-w-[40px]">
-                <img src="img/logo.png" alt="logo" class="rounded-full min-w-[40px]" />
-            </div>
-            <div class="ml-3 text-discord-text-1">
-                <p class="font-['ggsans-bold']">Anonymous Voice</p>
-                <p class="font-['ggsans'] text-discord-text-2">so what are you waiting for? go invite me by clicking <a class="text-blue-500 underline" href="https://discord.com/api/oauth2/authorize?client_id=979129654923374592&permissions=431710660928&scope=bot%20applications.commands">this link</a>.</p>
-            </div>
+    </Chat>
+    <Chat username={"Anonymous Voice"}>
+        <div slot="chat">
+            <p class="font-['ggsans'] text-discord-text-2">so what are you waiting for? go invite me by clicking <a class="text-blue-500 underline" href="https://discord.com/api/oauth2/authorize?client_id=979129654923374592&permissions=431710660928&scope=bot%20applications.commands">this link</a>.</p>
         </div>
-    </div>
+    </Chat>
 </div>
