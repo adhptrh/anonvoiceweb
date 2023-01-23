@@ -20,13 +20,19 @@
             }])
         }
         else if (chat == "no" || chat == "nah" ) {
-            chatData.set([...$chatData,{
-                "username":"Anonymous Bot",
-                "profilePicture":"logo.png",
-                "chats": [
-                    "fuck you"
-                ]
-            }])
+            setTimeout(()=>{
+                chatData.set([...$chatData,{
+                    "username":"Anonymous Bot",
+                    "profilePicture":"logo.png",
+                    "chats": [
+                        "fuck you"
+                    ]
+                }])
+                
+                setTimeout(()=>{
+                    document.getElementsByClassName("chatbox")[0].scrollTop = document.getElementsByClassName("chatbox")[0].scrollHeight
+                },50)
+            }, 200)
         }
 
         setTimeout(()=>{
@@ -38,7 +44,7 @@
 
 <form on:submit|preventDefault={submit} class="flex p-5 bg-discord-bg-3 rounded-b-lg">
     <input
-        placeholder="Message @Anonymous Voice (this website is still read-only)"
+        placeholder="Message @Anonymous Voice"
         class="p-3 px-4 w-full font-['ggsans'] text-white outline-none rounded-md bg-discord-bg-2"
         bind:value={chat}
     />
