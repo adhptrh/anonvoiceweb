@@ -9,8 +9,8 @@
 	<title>Anonymous Voice Discord Bot</title>
 </svelte:head>
 
-<div class="flex justify-center h-screen bg-discord-bg-5">
-	<div class="flex flex-col h-screen w-screen fixed bg-discord-bg-3 lg:max-w-2xl shadow-md">
+<div class="flex justify-center h-screen fix100vh bg-discord-bg-5 ">
+	<div class="flex flex-col h-screen fix100vh w-screen fixed bg-discord-bg-3 lg:max-w-2xl shadow-md">
 		<Title/>
 		<ChatBox/>
 		<InputBox/>
@@ -20,11 +20,12 @@
 <style>
 	body {
 		min-height: 100vh;
-		min-height: fill-available;
 		min-height: -webkit-fill-available;
 	}
 	html {
-		height: fill-available;
 		height: -webkit-fill-available;
+	}
+	.fix100vh {
+		min-height: -webkit-fill-available;
 	}
 </style>
