@@ -3,7 +3,7 @@
     import { chatData } from "../store"
 </script>
 
-<div class="flex flex-col h-full overflow-y-scroll bg-discord-bg-3">
+<div class="chatbox flex flex-col h-full overflow-y-scroll bg-discord-bg-3">
     <div class="mt-auto" />
     <div class="m-5">
         <img src="img/logo.png" alt="logo" class="rounded-full mb-3" width="80" height="80" />

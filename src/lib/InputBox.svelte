@@ -19,6 +19,7 @@
                 ]
             }])
         }
+        document.getElementsByClassName("chatbox")[0].scrollTop = document.getElementsByClassName("chatbox")[0].scrollHeight
         chat = ""
     }
 </script>
