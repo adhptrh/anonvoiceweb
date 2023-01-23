@@ -19,7 +19,10 @@
                 ]
             }])
         }
-        document.getElementsByClassName("chatbox")[0].scrollTop = document.getElementsByClassName("chatbox")[0].scrollHeight
+
+        setTimeout(()=>{
+            document.getElementsByClassName("chatbox")[0].scrollTop = document.getElementsByClassName("chatbox")[0].scrollHeight
+        },50)
         chat = ""
     }
 </script>
@@ -30,7 +33,7 @@
         class="p-3 px-4 w-full font-['ggsans'] text-white outline-none rounded-md bg-discord-bg-2"
         bind:value={chat}
     />
-    <button class="ml-3 bg-discord-blue-1 rounded-full p-4"
+    <button on:touchend|preventDefault={submit} class="ml-3 bg-discord-blue-1 rounded-full p-4"
         ><svg
             width="21"
             height="20"
