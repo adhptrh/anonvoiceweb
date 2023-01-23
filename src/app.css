@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'ggsans-bold';
+    src: url('/fonts/ggsans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'ggsans';
+    src: url('/fonts/ggsans-Normal.ttf') format("truetype");
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-discord-bg-3
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-discord-border rounded-full; 
+}
