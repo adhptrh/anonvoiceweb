@@ -28,7 +28,7 @@
             <div class="ml-3 text-discord-text-1">
                 <p class="font-['ggsans-bold']">Anonymous Voice</p>
                 <p class="font-['ggsans-bold'] text-discord-text-2">Q: What can this bot do?</p>
-                <p class="font-['ggsans'] text-discord-text-2">randomly connect you (might dont have friends) with other discord user (might also dont have friends) using a voice channel. (calm dude, its just a joke.)</p>
+                <p class="font-['ggsans'] text-discord-text-2">randomly connect you (might dont have friends) with other discord user (might also dont have friends) by using a voice channel. (calm dude, its just a joke.)</p>
             </div>
         </div>
     </div>
