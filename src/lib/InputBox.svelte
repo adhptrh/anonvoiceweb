@@ -19,6 +19,15 @@
                 ]
             }])
         }
+        else if (chat == "no" || chat == "nah" ) {
+            chatData.set([...$chatData,{
+                "username":"Anonymous Bot",
+                "profilePicture":"logo.png",
+                "chats": [
+                    "fuck you"
+                ]
+            }])
+        }
 
         setTimeout(()=>{
             document.getElementsByClassName("chatbox")[0].scrollTop = document.getElementsByClassName("chatbox")[0].scrollHeight
