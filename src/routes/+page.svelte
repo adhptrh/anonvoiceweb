@@ -9,10 +9,12 @@
 	<title>Anonymous Voice Discord Bot</title>
 </svelte:head>
 
-<div class="flex flex-col h-screen w-screen fixed bg-discord-bg-3">
-	<Title/>
-	<ChatBox/>
-	<InputBox/>
+<div class="flex justify-center h-screen bg-discord-bg-5">
+	<div class="flex flex-col h-screen w-screen fixed bg-discord-bg-3 lg:max-w-2xl shadow-md">
+		<Title/>
+		<ChatBox/>
+		<InputBox/>
+	</div>
 </div>
 
 <style>
