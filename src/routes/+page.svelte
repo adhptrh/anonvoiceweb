@@ -28,7 +28,7 @@
 
 <div class="flex h-screen justify-center bg-discord-bg-5">
 	<div class="fixed flex max-h-full h-full w-full md:py-8 flex-col md:max-w-2xl">
-		<div class="flex flex-col h-full shadow-lg">
+		<div class="flex flex-col h-full drop-shadow-md">
 			<Title/>
 			<ChatBox/>
 			<InputBox/>
