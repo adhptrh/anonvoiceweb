@@ -11,13 +11,19 @@
             ]
         }])
         if (chat == "/help") {
-            chatData.set([...$chatData,{
-                "username":"Anonymous Bot",
-                "profilePicture":"logo.png",
-                "chats": [
-                    "nope, no commands in this website working for now."
-                ]
-            }])
+            setTimeout(()=>{
+                chatData.set([...$chatData,{
+                    "username":"Anonymous Bot",
+                    "profilePicture":"logo.png",
+                    "chats": [
+                        "nope, no commands in this website working for now."
+                    ]
+                }])
+                
+                setTimeout(()=>{
+                    document.getElementsByClassName("chatbox")[0].scrollTop = document.getElementsByClassName("chatbox")[0].scrollHeight
+                },50)
+            }, 200)
         }
         else if (chat == "no" || chat == "nah" ) {
             setTimeout(()=>{
@@ -25,7 +31,7 @@
                     "username":"Anonymous Bot",
                     "profilePicture":"logo.png",
                     "chats": [
-                        "fuck you"
+                        "fuck you."
                     ]
                 }])
                 
