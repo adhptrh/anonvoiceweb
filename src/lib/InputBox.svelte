@@ -10,6 +10,15 @@
                 chat
             ]
         }])
+        if (chat == "/help") {
+            chatData.set([...$chatData,{
+                "username":"Anonymous Bot",
+                "profilePicture":"logo.png",
+                "chats": [
+                    "nope, no commands in this website working for now."
+                ]
+            }])
+        }
         chat = ""
     }
 </script>
