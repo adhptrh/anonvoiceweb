@@ -59,7 +59,7 @@
             </div>
             <div class="ml-3 text-discord-text-1">
                 <p class="font-['ggsans-bold']">Anonymous Voice</p>
-                <p class="font-['ggsans'] text-discord-text-2">so what are you waiting for? go invite the bot by clicking <a class="text-blue-500 underline" href="https://discord.com/api/oauth2/authorize?client_id=979129654923374592&permissions=431710660928&scope=bot%20applications.commands">this link</a>.</p>
+                <p class="font-['ggsans'] text-discord-text-2">so what are you waiting for? go invite me by clicking <a class="text-blue-500 underline" href="https://discord.com/api/oauth2/authorize?client_id=979129654923374592&permissions=431710660928&scope=bot%20applications.commands">this link</a>.</p>
             </div>
         </div>
     </div>
