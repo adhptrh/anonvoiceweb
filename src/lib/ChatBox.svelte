@@ -1,5 +1,6 @@
 <script lang="ts">
     import Chat from "./Chat.svelte"
+    import { chatData } from "../store"
 </script>
 
 <div class="flex flex-col h-full overflow-y-scroll bg-discord-bg-3">
@@ -41,4 +42,33 @@
             <p class="font-['ggsans'] text-discord-text-2">so what are you waiting for? go invite me by clicking <a class="text-blue-500 underline" href="https://discord.com/api/oauth2/authorize?client_id=979129654923374592&permissions=431710660928&scope=bot%20applications.commands">this link</a>.</p>
         </div>
     </Chat>
+    {#each $chatData as item, i}
+        {#if i-1 >= 0}
+            {#if $chatData[i-1].username == $chatData[i].username}
+            <Chat username={item.username} continueChat={true}>
+                <div slot="chat">
+                    {#each item.chats as chat}
+                    <p class="font-['ggsans'] text-discord-text-2">{chat}</p>
+                    {/each}
+                </div>
+            </Chat>
+            {:else}
+            <Chat username={item.username} profilePicture={item.profilePicture}>
+                <div slot="chat">
+                    {#each item.chats as chat}
+                    <p class="font-['ggsans'] text-discord-text-2">{chat}</p>
+                    {/each}
+                </div>
+            </Chat>
+            {/if}
+        {:else}
+            <Chat username={item.username} profilePicture={item.profilePicture}>
+                <div slot="chat">
+                    {#each item.chats as chat}
+                    <p class="font-['ggsans'] text-discord-text-2">{chat}</p>
+                    {/each}
+                </div>
+            </Chat>
+        {/if}
+    {/each}
 </div>

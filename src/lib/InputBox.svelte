@@ -1,7 +1,24 @@
-<div class="flex p-5 bg-discord-bg-3 rounded-b-lg">
+<script lang="ts">
+    import { chatData } from "../store"
+    let chat: string
+
+    function submit() {
+        chatData.set([...$chatData,{
+            "username":"i promise i will invite the bot",
+            "profilePicture":"pp.png",
+            "chats": [
+                chat
+            ]
+        }])
+        chat = ""
+    }
+</script>
+
+<form on:submit|preventDefault={submit} class="flex p-5 bg-discord-bg-3 rounded-b-lg">
     <input
         placeholder="Message @Anonymous Voice (this website is still read-only)"
         class="p-3 px-4 w-full font-['ggsans'] text-white outline-none rounded-md bg-discord-bg-2"
+        bind:value={chat}
     />
     <button class="ml-3 bg-discord-blue-1 rounded-full p-4"
         ><svg
@@ -17,4 +34,4 @@
             />
         </svg>
     </button>
-</div>
+</form>
